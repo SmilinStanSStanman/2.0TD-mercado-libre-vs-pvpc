@@ -36,3 +36,5 @@ https://github.com/TripitonPT/2.0TD-mercado-libre-vs-pvpc/blob/main/apexcharts-c
 https://github.com/TripitonPT/2.0TD-mercado-libre-vs-pvpc/blob/main/apexcharts-card_mes_actual.yaml
 
 El estos apexcharts-card se deben cambiar las XXXX de "sensor.edata_XXXX" por los caracteres que se correspondan con el nombre de nuestra entidad. Tambien podéis personalizar el nombre de vuestra comercializadora de electricidad.
+
+Para terminar, podrás ver que se ha creado un sensor "sensor.precio_electricidad_ahora" que puedes visualizar en una tarjeta de entidades como la de la imagen superior. En ese sensor puedes ver el precio al que pagas la luz en ese preciso momento en función de la hora que sea.
