@@ -11,3 +11,10 @@ En las zonas censuradas en rojo de la imagen puedes poner el nombre de tu comerc
 
 PASO 1:
 Se integra el sensor binario workday ( https://www.home-assistant.io/integrations/workday/ ) para que Home Assistant sepa cuando es festivo nacional y cuando no lo es
+Para ello ponemos en el fichero binary_sensor-yaml del Home assistant lo siguiente:
+
+- platform: workday
+  country: ES
+  name: "workday electric"
+  
+  Si no tenemos un fichero binarý_sensor.yaml lo tendremos que crear, y al final de nuestro fichero configuration.yaml
