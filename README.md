@@ -24,9 +24,15 @@ En las lineas 8, 13, 18, 23 y 28 de este fichero sensor.yaml aparecen unos valor
 
 En el codigo pegado en el fichero sensor.yaml veras que aparece repetidamente "sensor.edata_XXXX". Los 4 ultimos caracteres debes reemplazarlos por los que tenga el sensor edata de tu integracion edata de uvajota. Estos caracteres dependen del CUPS de tu punto de suministro.
 
-En la linea 84 y 129 de este fichero sensor.yaml aparece un valor "0.001". Este valor representa el porcentaje aplicable al impuesto electrico. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor.
+En la linea 84 y 129 de este fichero sensor.yaml aparece un valor "0.001". Este valor representa el porcentaje aplicable al impuesto electrico. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor (1 euro por MWh consumido en el momento de escribir esto).
 
-En la linea 94 y 139 de este fichero sensor.yaml aparece un valor "0.10". Este valor representa el porcentaje aplicable al IVA. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor.
+En la linea 94 y 139 de este fichero sensor.yaml aparece un valor "0.10". Este valor representa el porcentaje aplicable al IVA. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor (10% en el momento de escribir esto).
 
 PASO 3:
-En las tarjetas que uvejota ha preparado ( https://github.com/uvejota/homeassistant-edata/wiki/uso ) hacemos un pequeño cambio para que aparezcan los valores de nuestra comercializadora junto con los del PVPC.
+En las tarjetas que uvejota ha preparado ( https://github.com/uvejota/homeassistant-edata/wiki/uso ) hacemos un pequeño cambio para que aparezcan los valores de nuestra comercializadora junto con los del PVPC. Modificamos las apexcharts-card que presentan los detalles del mes pasado y los detalles del mes en curso con el siguiente codigo:
+
+https://github.com/TripitonPT/2.0TD-mercado-libre-vs-pvpc/blob/main/apexcharts-card_mes_pasado.yaml
+
+https://github.com/TripitonPT/2.0TD-mercado-libre-vs-pvpc/blob/main/apexcharts-card_mes_actual.yaml
+
+El estos apexcharts-card se deben cambiar las XXXX de "sensor.edata_XXXX" por los caracteres que se correspondan con el nombre de nuestra entidad. Tambien podeis personalizar el nombre de vuestra comercializadora de electricidad.
