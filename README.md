@@ -27,3 +27,6 @@ En el codigo pegado en el fichero sensor.yaml veras que aparece repetidamente "s
 En la linea 84 y 129 de este fichero sensor.yaml aparece un valor "0.001". Este valor representa el porcentaje aplicable al impuesto electrico. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor.
 
 En la linea 94 y 139 de este fichero sensor.yaml aparece un valor "0.10". Este valor representa el porcentaje aplicable al IVA. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor.
+
+PASO 3:
+En las tarjetas que uvejota ha preparado ( https://github.com/uvejota/homeassistant-edata/wiki/uso ) hacemos un pequeño cambio para que aparezcan los valores de nuestra comercializadora junto con los del PVPC.
