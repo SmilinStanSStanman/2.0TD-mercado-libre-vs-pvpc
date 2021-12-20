@@ -8,3 +8,6 @@ Los sensores creados aqui extraen datos de los atributos de la entidad edata_XXX
 ![Sin título-1](https://user-images.githubusercontent.com/76565446/146772252-075f3e85-6f27-4239-b88b-9b1b8d15f2ce.jpg)
 
 En las zonas censuradas en rojo de la imagen puedes poner el nombre de tu comercializadora.
+
+PASO 1:
+Se integra el sensor binario workday (https://www.home-assistant.io/integrations/workday/)para que Home Assistant sepa cuando es festivo nacional y cuando no lo es
