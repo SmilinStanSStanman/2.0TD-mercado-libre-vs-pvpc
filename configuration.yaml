@@ -1,0 +1,2 @@
+sensor: !include sensor.yaml
+binary_sensor: !include binary_sensor.yaml
