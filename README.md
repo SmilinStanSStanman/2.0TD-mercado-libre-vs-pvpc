@@ -20,3 +20,8 @@ Se crean los sensores de calculo de la factura de nuestra comercializadora de el
 
 https://github.com/TripitonPT/2.0TD-mercado-libre-vs-pvpc/blob/main/sensor.yaml
 
+En las lineas 8, 13, 18, 23 y 28 de este fichero sensor.yaml aparecen unos valores. Ahí deberas poner los precios a los que tu comercializadora te cobra la energia consumida en P1, P2 y P3 y el coste de la potencia en P1 y P2 (puedes localizar esos precios en tu ultima factura).
+
+En el codigo pegado en el fichero sensor.yaml veras que aparece repetidamente "sensor.edata_XXXX". Los 4 ultimos caracteres debes reemplazarlos por los que tenga el sensor edata de tu integracion edata de uvajota. Estos caracteres dependen del CUPS de tu punto de suministro.
+
+En la linea 84 de este fichero sensor.yaml aparece un valor "0.001". Este valor es el porcentaje aplicable al impuesto electrico. Cuando se modifique el tipo impositivo de este impuesto, deberás actualizar este valor.
